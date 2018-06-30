@@ -240,6 +240,7 @@ th {
   }
   .navbar {
     display: none;
+     border: none!important; 
   }
   .btn > .caret,
   .dropup > .btn > .caret {
@@ -1147,7 +1148,7 @@ hr {
   margin-top: 20px;
   margin-bottom: 20px;
   border: 0;
-  border-top: 1px solid #eee;
+  border-top: 0px solid #eee;
 }
 .sr-only {
   position: absolute;
@@ -4016,7 +4017,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   max-width: none;
 }
 .nav-tabs {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 0px solid #ddd;
 }
 .nav-tabs > li {
   float: left;
@@ -4494,7 +4495,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-default {
   background-color: #f8f8f8;
-  border-color: #e7e7e7;
+  border-color: none;
 }
 .navbar-default .navbar-brand {
   color: #777;
