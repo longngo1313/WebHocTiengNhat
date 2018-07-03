@@ -62,7 +62,7 @@ public class TransactionController {
 		String seriNo  = request.getParameter("seri_no");
 		String trxNum = request.getParameter("trx_number");
 		Timestamp trxDate = new Timestamp(System.currentTimeMillis());
-		Long trxTime  = 0l;
+		String trxTime  = "" + System.currentTimeMillis();
 		Long userId = Long.parseLong(request.getParameter("user_id"));
 		System.out.println("Data is seriNo: "+ seriNo + "\n trxNum: " + trxNum + 
 				"\n trxDate " + trxDate +

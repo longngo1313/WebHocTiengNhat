@@ -29,7 +29,7 @@ public class Transaction {
 	@Column(name = "trx_date")
 	private Timestamp date;
 	@Column(name = "trx_time")
-	private Long time;
+	private String time;
 	@Column(name = "user_id")
 	private Long userId;
 	public Long getTrxId() {
@@ -56,10 +56,10 @@ public class Transaction {
 	public void setDate(Timestamp date) {
 		this.date = date;
 	}
-	public Long getTime() {
+	public String getTime() {
 		return time;
 	}
-	public void setTime(Long time) {
+	public void setTime(String time) {
 		this.time = time;
 	}
 	public Long getUserId() {

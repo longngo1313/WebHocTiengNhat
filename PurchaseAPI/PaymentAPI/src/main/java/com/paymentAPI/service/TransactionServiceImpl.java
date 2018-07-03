@@ -39,7 +39,7 @@ public class TransactionServiceImpl implements TransactionService{
 	}
 
 	@Override
-	public int addTrx(String seriNo, String trxNumber, Timestamp trxDate, Long trxTime, Long userId) {
+	public int addTrx(String seriNo, String trxNumber, Timestamp trxDate, String trxTime, Long userId) {
 		// TODO Auto-generated method stub
 //		int i = trxRepository.addTrx(seriNo, trxNumber, trxDate, trxTime, userId);
 		Transaction transaction = new Transaction();
