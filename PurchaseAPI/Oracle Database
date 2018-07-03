@@ -1,0 +1,22 @@
+Database : Oracle 
+
+
+---Create table Transaction 
+CREATE TABLE Transaction (
+         trx_id      NUMBER(5) PRIMARY KEY,
+         seri_no      VARCHAR2(15) NOT NULL,
+         trx_number        NUMBER(9),
+         trx_date         DATE DEFAULT (sysdate),
+         trx_time        VARCHAR2(15) DEFAULT ('0'),
+         user_id   NUMBER(5)
+                     CONSTRAINT user_id REFERENCES user_api
+                     (user_id))
+-----------Create USER_API table
+CREATE TABLE USER_API (
+         user_id      NUMBER(5) PRIMARY KEY,
+         user_name      VARCHAR2(15) NOT NULL,
+         user_level        NUMBER(9),
+         user_phone         VARCHAR2(10),
+         str_date         DATE DEFAULT (sysdate),
+         end_date    DATE,
+		     user_type   VARCHAR2(45))
