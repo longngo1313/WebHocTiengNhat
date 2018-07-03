@@ -49,9 +49,16 @@ public class TransactionServiceImpl implements TransactionService{
 		transaction.setTrxNumber(trxNumber);
 		transaction.setUserId(userId);
 		transaction.setTime(trxTime);
-		Transaction newdata = trxRepository.save(transaction);
-		System.out.println("Data added is  ================ " + newdata);
-		return 0;
+		try {
+			Transaction newdata = trxRepository.save(transaction);
+			System.out.println("Data added is success ================ ");
+			return 1;
+		}
+		catch(Exception e){
+			System.out.println("Data added is failed ================ ");
+			return 0;
+		}
+		
 	}
 
 	@Override
