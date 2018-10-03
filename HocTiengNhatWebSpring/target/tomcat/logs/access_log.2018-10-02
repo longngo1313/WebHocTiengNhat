@@ -1,5 +1,0 @@
-0:0:0:0:0:0:0:1 - - [02/Oct/2018:11:34:41 +0700] "GET /HocTiengNhatWebSpring/ HTTP/1.1" 404 949 http-bio-8899-exec-1 52
-0:0:0:0:0:0:0:1 - - [02/Oct/2018:11:34:42 +0700] "GET /favicon.ico HTTP/1.1" 404 949 http-bio-8899-exec-3 2
-0:0:0:0:0:0:0:1 - - [02/Oct/2018:11:35:42 +0700] "GET / HTTP/1.1" 404 949 http-bio-8899-exec-5 4
-0:0:0:0:0:0:0:1 - - [02/Oct/2018:11:37:46 +0700] "GET /HocTiengNhatWebSpring/ HTTP/1.1" 404 949 http-bio-8897-exec-1 45
-0:0:0:0:0:0:0:1 - - [02/Oct/2018:11:37:46 +0700] "GET /favicon.ico HTTP/1.1" 404 949 http-bio-8897-exec-3 2
