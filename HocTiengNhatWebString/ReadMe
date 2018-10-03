@@ -1,0 +1,6 @@
+To run project:
+1, Open Run Configurations --> Maven Build -- > New
+2, Setup like below: 
+  Name: Run SpringMVCJdbcTransaction
+  Base directory: chose your current dictionary
+  Goals: tomcat7:run
