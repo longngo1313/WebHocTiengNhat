@@ -86,26 +86,41 @@
 			<artifactId>jtds</artifactId>
 			<version>1.3.1</version>
 		</dependency>
+
+		<!-- Spring Security Artifacts - START -->
+		<!-- http://mvnrepository.com/artifact/org.springframework.security/spring-security-web%20 -->
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-web</artifactId>
+			<version>4.0.4.RELEASE</version>
+		</dependency>
+
+		<!-- http://mvnrepository.com/artifact/org.springframework.security/spring-security-config%20 -->
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-config</artifactId>
+			<version>4.0.4.RELEASE</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<finalName>HocTiengNhatWebSpring</finalName>
-		
+
 		<plugins>
-         
-            <!-- Config: Maven Tomcat Plugin -->
-            <!-- http://mvnrepository.com/artifact/org.apache.tomcat.maven/tomcat7-maven-plugin%20-->
-            <plugin>
-                <groupId>org.apache.tomcat.maven</groupId>
-                <artifactId>tomcat7-maven-plugin</artifactId>
-                <version>2.2</version>
-                <!-- Config: contextPath and Port (Default - /SpringMVCJdbcTransaction,8080) -->
-                
-                <configuration>
-                    <path>/</path>
-                    <port>8897</port>
-                </configuration>
-                
-            </plugin>
-        </plugins>
+
+			<!-- Config: Maven Tomcat Plugin -->
+			<!-- http://mvnrepository.com/artifact/org.apache.tomcat.maven/tomcat7-maven-plugin%20 -->
+			<plugin>
+				<groupId>org.apache.tomcat.maven</groupId>
+				<artifactId>tomcat7-maven-plugin</artifactId>
+				<version>2.2</version>
+				<!-- Config: contextPath and Port (Default - /SpringMVCJdbcTransaction,8080) -->
+
+				<configuration>
+					<path>/</path>
+					<port>8897</port>
+				</configuration>
+
+			</plugin>
+		</plugins>
 	</build>
 </project>
