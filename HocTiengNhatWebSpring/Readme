@@ -4,3 +4,27 @@ To run project:
   Name: Run SpringMVCJdbcTransaction
   Base directory: chose your current dictionary
   Goals: tomcat7:run
+  
+  
+  
+SQL Server:
+Create table USERS
+(
+ ID       int IDENTITY(1,1),
+ USER_NAME VARCHAR(36) not null,
+ PASSWORD VARCHAR(36) not null,
+ ENABLED  smallint not null,
+ LEARNING_LEVEL VARCHAR(36),
+ PURCHASED VARCHAR(36),
+ EMAIL VARCHAR(36) not null,
+ BIRTH_DATE VARCHAR(36),  
+ NAME VARCHAR(36),
+ ROLE VARCHAR(36),
+) ;
+ 
+Alter table USERS
+ add primary key (ID) ;
+ alter table USERS
+ add constraint User_Account_UK1 unique (EMAIL);
+ alter table USERS
+ add constraint User_Account_UK2 unique (USER_NAME);
