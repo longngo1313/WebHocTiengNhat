@@ -28,3 +28,6 @@ Alter table USERS
  add constraint User_Account_UK1 unique (EMAIL);
  alter table USERS
  add constraint User_Account_UK2 unique (USER_NAME);
+
+
+SQL Backup: backup.bak file
